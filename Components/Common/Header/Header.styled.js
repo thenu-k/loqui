@@ -5,7 +5,7 @@ export const HeaderContainer = styled.header`
     width: 100%;
     color: black;
     height: 60px;
-    border-bottom: 1px solid #d7d7d7;
+    border-bottom: 1px solid ${`${GLOBAL_SETTINGS.COLOR_SCHEMES.LIGHT[3]}`};
     & nav{
         display: flex; flex-direction: row;
         height: 100%;
