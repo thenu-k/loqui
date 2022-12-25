@@ -4,7 +4,9 @@ import Landing from './Landing/Landing';
 const Home = () => {
     return (
         <S.HomeContainer>
-            <Landing/>
+            <div className="inner">
+                
+            </div>
         </S.HomeContainer>
     );
 }
