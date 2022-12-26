@@ -9,6 +9,7 @@ export const HomeContainer = styled.section`
     & .inner{
         margin-top: 40px;
         width: 80%;
+        max-width: 1500px;
         display: flex; flex-direction: row; justify-content: space-between;
     }
 `

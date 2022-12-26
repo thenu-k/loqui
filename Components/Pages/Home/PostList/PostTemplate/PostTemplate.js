@@ -7,8 +7,7 @@ const PostTemplate = ({data}) => {
             {
                 (data.imageURL!=null)
                     ? (
-                        <div className="imageOuter center">
-                            {/* <img src={`${data.imageURL}`} alt="" /> */}
+                        <div className="imageOuter center" style={{backgroundImage: `url(${data.imageURL})`}}>
                         </div>
                     )
                     : null
