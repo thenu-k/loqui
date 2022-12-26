@@ -2,36 +2,35 @@ import { useState } from 'react';
 import Loading from './Loading/Loading';
 import * as S from './PostList.styled'
 import PostTemplate from './PostTemplate/PostTemplate';
+import {collection, getDocs} from 'firebase/firestore'
+import {db} from '../../../../firebase/firebase'
 
-const PostList = ({postData}) => {
-    const data = [
-        {
-            imageURL: '/landing10.jpg',
-            title: 'Breakthrough in Nuclear Fusion', 
-            userName: 'Anonymous', 
-            about: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, quam!',
-            postID: '205'
-        },
-        {
-            imageURL: '/landing.jpg',
-            title: 'Breakthrough in Nuclear Fusion', 
-            userName: 'Anonymous', 
-            about: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, quam!',
-            postID: '206'
-        },
-    ]
-    const [isLoading, setIsLoading] = useState(true)
+const PostList = () => {
+    const [postData, setPostData] = useState(null)
+    const getPostData = async() => {
+        const collectionRef = collection(db, 'postData')
+        const rawPostData = await getDocs(collectionRef)
+        const postData = rawPostData.docs.map(doc => ({
+          postID: doc.id,
+          imageURL: doc.data().imageURL,
+          title: doc.data().title,
+          about: doc.data().about,
+          userName: doc.data().userName
+        })) 
+        setPostData(postData)
+    }
+    getPostData()
     var Output;
-    if (isLoading){
+    if (postData===null){
         Output = <LoadingElement/>
     }else{
         Output = postData.map(dataElement => <div className="postOuter center"><PostTemplate data={dataElement}/></div>)
     }
-    // Delay simulator
-    const changeState = () => {
-        setIsLoading(false)
-    }
-    setTimeout(changeState, 500);
+    // // Delay simulator
+    // const changeState = () => {
+    //     setIsLoading(false)
+    // }
+    // setTimeout(changeState, 500);
     return (
         <S.PostListContainer>
             {Output}

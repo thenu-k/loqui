@@ -3,11 +3,11 @@ import Landing from './Landing/Landing';
 import PostList from './PostList/PostList';
 import SideSection from './SideSection/SideSection';
 
-const Home = ({postData}) => {
+const Home = () => {
     return (
         <S.HomeContainer>
             <div className="inner homePage">
-                <PostList postData={postData}/>
+                <PostList/>
                 <SideSection/>
             </div>
         </S.HomeContainer>
