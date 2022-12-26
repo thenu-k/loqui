@@ -1,9 +1,10 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 import PageFornat from "../../Components/Common/PageFormat/PageFormat";
+import PostPage from "../../Components/Pages/Post/PostPage";
 
 
-const PostPage = () => {
+const PostOuter = () => {
     const router = useRouter()
     const postID = router.query.postID
     return (
@@ -15,10 +16,10 @@ const PostPage = () => {
                 <link rel="icon" href="/favicon.ico" />
              </Head>
              <PageFornat>
-                Yo
+                <PostPage/>
              </PageFornat>
         </>
     );
 }
 
-export default PostPage;
+export default PostOuter;
