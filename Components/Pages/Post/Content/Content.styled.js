@@ -30,6 +30,8 @@ export const ContentContainer = styled.div`
             background-repeat: no-repeat;
         }
         & .text{
+            width: 80%;
+            margin-bottom: 40px;
             & *{line-height: 2}
         }
     }
