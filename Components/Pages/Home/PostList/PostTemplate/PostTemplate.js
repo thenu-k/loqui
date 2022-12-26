@@ -5,8 +5,10 @@ const PostTemplate = ({data}) => {
     //Redirection logic
     const router = useRouter()
     const redirect = (postID) => {
-        const redirectURL = `/post/${postID}`
-        router.push(redirectURL)
+        router.push({
+            pathname: '/post/[postID]',
+            query: { postID: postID },
+          })
     }
     return (
         <S.PostTemplateContainer onClick={(e)=>{redirect(data.postID)}}>
