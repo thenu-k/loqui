@@ -17,5 +17,9 @@ export const PostListContainer = styled.div`
             cursor: pointer; 
             background-color: #d2d2d2;
         }
+        &.loading:hover{
+            cursor: unset;
+            background-color: white;
+        }
     }
 `
