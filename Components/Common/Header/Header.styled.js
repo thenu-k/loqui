@@ -36,6 +36,9 @@ export const HeaderContainer = styled.header`
                         background-color: ${`${GLOBAL_SETTINGS.COLOR_SCHEMES.LIGHT[2]}`}
                     }
                 }
+                &.menuIcon{
+                    display: none;
+                }
             }
         }
     }
@@ -43,6 +46,22 @@ export const HeaderContainer = styled.header`
     @media all and (max-width: 1000px){
         & nav{
             width: 90%;
+            & li:not(.menuIcon){
+                display: none
+            }
+            & ul li.menuIcon{
+                display: flex;
+                button{
+                    height: 30px; width: 100%; overflow:hidden;
+                    background-color: white;
+                    img{
+                        height: 100%;
+                    }
+                    :hover{
+                        cursor: pointer;
+                    }
+                }
+            }
         }
     }
 `
