@@ -4,7 +4,7 @@ import PageFornat from "../../Components/Common/PageFormat/PageFormat";
 import PostPage from "../../Components/Pages/Post/PostPage";
 
 
-const PostOuter = () => {
+const PostOuter = ({postData}) => {
     const router = useRouter()
     const postID = router.query.postID
     return (
@@ -16,10 +16,21 @@ const PostOuter = () => {
                 <link rel="icon" href="/favicon.ico" />
              </Head>
              <PageFornat>
-                <PostPage/>
+                <PostPage postData={postData}/>
              </PageFornat>
         </>
     );
 }
 
+export async function getServerSideProps() {
+    // Call an external API endpoint to get posts
+    const res = await fetch('https://catfact.ninja/fact')
+    const postData = await res.json()
+    return {
+      props: {
+        postData,
+      },
+    }
+  }
+  
 export default PostOuter;

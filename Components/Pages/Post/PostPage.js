@@ -1,11 +1,11 @@
 import Content from './Content/Content';
 import * as S from './PostPage.styled'
 
-const PostPage = () => {
+const PostPage = ({postData}) => {
     return (
         <S.PostPageContainer className='center'>
             <div className="postPage inner">
-                <Content/>
+                <Content postData={postData}/>
             </div>
         </S.PostPageContainer>
     );

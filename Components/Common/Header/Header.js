@@ -1,4 +1,5 @@
 import * as S from './Header.styled'
+import Link from 'next/link'
 
 const Header = () => {
     return (
@@ -6,9 +7,9 @@ const Header = () => {
             <nav>
                 <h2 className='center'>LOQUI</h2>
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="#">Github</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><Link href="/">Home</Link></li>
+                    <li><Link href="#">Github</Link></li>
+                    <li><Link href="#">Contact</Link></li>
                 </ul>
             </nav>
         </S.HeaderContainer>

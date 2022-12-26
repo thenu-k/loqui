@@ -1,6 +1,7 @@
 import * as S from './Content.styled'
 
-const Content = () => {
+const Content = ({postData}) => {
+    console.log(postData)
     const data = {
         imageURL: '/landing10.jpg',
         title: 'The Crisis in Cosmology.', 
@@ -12,7 +13,7 @@ const Content = () => {
         <S.ContentContainer className='center'>
             <div className="inner content">
                 <div className="meta">
-                    <h1>{data.title}</h1>
+                    <h1>{postData.fact}</h1>
                     <span>by {data.userName}</span>
                 </div>
                 <div className="image" style={{backgroundImage: `url('${data.imageURL}')`}}></div>
