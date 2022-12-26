@@ -6,6 +6,8 @@ export const HeaderContainer = styled.header`
     color: black;
     height: 60px;
     border-bottom: 1px solid ${`${GLOBAL_SETTINGS.COLOR_SCHEMES.LIGHT[3]}`};
+    background-color: white;
+    position: fixed; top: 0; left: 0; z-index: 9999;
     & nav{
         display: flex; flex-direction: row;
         height: 100%;

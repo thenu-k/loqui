@@ -39,7 +39,7 @@ export const SideSectionContainer = styled.div`
             & span{
                 width: 90%;
                 display: flex; justify-content: flex-start;
-                margin-top: 20px; font-size: 0.9em;
+                margin-top: 20px; font-size: 01em; font-weight: 500;
             }
         }
     }
