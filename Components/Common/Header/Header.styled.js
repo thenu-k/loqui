@@ -42,6 +42,9 @@ export const HeaderContainer = styled.header`
             }
         }
     }
+    #sideMenu{
+        display: none;
+    }
 
     @media all and (max-width: 1000px){
         & nav{
@@ -62,6 +65,9 @@ export const HeaderContainer = styled.header`
                     }
                 }
             }
+        }
+        #sideMenu{
+            display: flex;
         }
     }
 `
