@@ -1,19 +1,21 @@
 import styled from "styled-components";
 
 export const PostTemplateContainer = styled.div`
-    width: 90%; padding: 20px 0;
+    width: 100%; padding-bottom: 20px;
+    display: flex; flex-direction: column; align-items: center;
 
     & .imageOuter{
-        margin: 20px 0;
+        margin-bottom: 20px;
         overflow: hidden;
         width: 100%; height: clamp(300px, 30vw, 500px);
-        border-radius: 5px;
+        border-radius: 5px 5px 0 0;
         background-size: cover; 
         background-position: center; background-repeat: no-repeat;
     }
     & .textSection{
         & > *{margin: 10px 0; width: 100%;}
         display: flex; flex-direction: column; 
+        width: 90%;
 
         & h3{
             font-size: 2em; font-weight: 600;
