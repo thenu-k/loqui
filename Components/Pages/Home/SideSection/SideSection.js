@@ -2,7 +2,7 @@ import * as S from './SideSection.styled'
 
 const SideSection = () => {
     return (
-        <S.SideSectionContainer>
+        <S.SideSectionContainer id='sideSection'>
             <div className="inner sideMenu">
                 <div className="bannerImage center">
                     <div className="profileImage"></div>

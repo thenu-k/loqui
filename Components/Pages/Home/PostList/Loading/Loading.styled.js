@@ -3,12 +3,13 @@ import styled from "styled-components";
 export const LoadingContainer = styled.div`
     width: 90%;
     display: flex; flex-direction: column; align-items: flex-start;
+    padding: 20px 0;
 
     & .bar{
         width: 100%; height: 150px; 
         border-radius: 5px; background-color: #d7d7d7;
-        margin: 20px 0;
         &.small{
+            margin-top: 20px;
             width: 90%; height: 100px;
         }
         animation-name: colorBounce; animation-duration: 1s; animation-timing-function: ease-in-out;

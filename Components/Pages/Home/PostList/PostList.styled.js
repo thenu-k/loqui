@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {GLOBAL_SETTINGS} from '../../../../frontend.config'
 
 export const PostListContainer = styled.div`
-    width: 70%; height: fit-content;
+    width: 65%; height: fit-content;
     display: flex; flex-direction: column; align-items: center;
     flex-shrink: 1;
 
@@ -21,5 +21,9 @@ export const PostListContainer = styled.div`
             cursor: unset;
             background-color: white;
         }
+    }
+
+    @media all and (max-width: 1000px){
+        width: 100%; flex-shrink: 0;
     }
 `

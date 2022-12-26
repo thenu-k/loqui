@@ -11,7 +11,7 @@ export const HeaderContainer = styled.header`
     & nav{
         display: flex; flex-direction: row;
         height: 100%;
-        width: 80%;
+        width: 80%; max-width: 2000px;
         & h2{
             color: white;
             font-size: 1em; font-weight: 600;

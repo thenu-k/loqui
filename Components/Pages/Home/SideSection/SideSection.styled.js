@@ -2,11 +2,11 @@ import styled from "styled-components";
 import {GLOBAL_SETTINGS} from '../../../../frontend.config'
 
 export const SideSectionContainer = styled.div`
-    width: auto;
+    width: 30%;
+    min-width: 250px;
     border: 0 !important;
     & .inner.sideMenu{
-        width: 350px;
-        margin-left: 25px;
+        width: 100%;
         min-height: 100px;
         border-radius: 5px;
         display: flex; flex-direction: column; align-items: center;
@@ -44,9 +44,8 @@ export const SideSectionContainer = styled.div`
         }
     }
     & .createPost.outer{
-        width: 350px;
+        width: 100%;
         margin: 25px 0;
-        margin-left: 25px;
         background-color: transparent;
         border-radius: 5px;
         & button{

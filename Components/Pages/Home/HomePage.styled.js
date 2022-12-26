@@ -10,8 +10,19 @@ export const HomeContainer = styled.section`
     & .inner.homePage{
         margin-top: 40px;
         width: 80%;
-        max-width: 1500px;
+        min-width: 900px;
+        max-width: 1000px;
         display: flex; flex-direction: row; justify-content: space-between;
         position: relative;
+    }
+
+    @media all and (max-width: 1000px){
+        & .inner.homePage{
+            width: 90%;
+            min-width: unset;
+            #sideSection{
+                display: none;
+            }
+        }
     }
 `
