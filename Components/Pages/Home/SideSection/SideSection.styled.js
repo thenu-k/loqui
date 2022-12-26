@@ -20,6 +20,7 @@ export const SideSectionContainer = styled.div`
             border-radius: 5px 5px 0 0;
             position: relative;
             & .profileImage{
+                display: none;
                 background-color: white;
                 border-radius: 5px;
                 height: 125px; width: 125px;
@@ -34,12 +35,13 @@ export const SideSectionContainer = styled.div`
             display: flex; flex-direction: column; align-items: center;
             & p{
                 width: 90%;
+                font-size: 1em; font-weight: 500;
                 text-align: left;
             }
             & span{
                 width: 90%;
                 display: flex; justify-content: flex-start;
-                margin-top: 20px; font-size: 01em; font-weight: 500;
+                margin-top: 20px; font-size: 01em; 
             }
         }
     }

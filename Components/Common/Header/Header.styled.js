@@ -39,4 +39,10 @@ export const HeaderContainer = styled.header`
             }
         }
     }
+
+    @media all and (max-width: 1000px){
+        & nav{
+            width: 90%;
+        }
+    }
 `

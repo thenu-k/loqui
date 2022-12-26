@@ -9,7 +9,8 @@ const SideSection = () => {
                 </div>
                 <div className="intro center">
                     <p className='center'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. A eius fugit sint id laborum quibusdam.
+                        Do not go gentle into that good night.<br/>
+                        Rage, rage against the dying of light. 
                     </p>
                     <span>Thenu Kaluarahchi © 2022  </span>
                 </div>
