@@ -1,8 +1,10 @@
 import Head from 'next/head'
 import PageFormat from '../Components/Common/PageFormat/PageFormat'
 import HomePage from '../Components/Pages/Home/HomePage'
+import {collection, getDocs} from 'firebase/firestore'
+import {db} from '../firebase/firebase'
 
-export default function Home() {
+export default function Home({postData}) {
   return (
     <>
       <Head>
@@ -12,8 +14,25 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <PageFormat>
-        <HomePage/>
+        <HomePage postData={postData}/>
       </PageFormat>
     </>
   )
+}
+
+export async function getServerSideProps(){
+  const collectionRef = collection(db, 'postData')
+  const rawPostData = await getDocs(collectionRef)
+  const postData = rawPostData.docs.map(doc => ({
+    postID: doc.id,
+    imageURL: doc.data().imageURL,
+    title: doc.data().title,
+    about: doc.data().about,
+    userName: doc.data().userName
+  })) 
+  return {
+    props: {
+      postData,
+    },
+  }
 }

@@ -3,7 +3,7 @@ import Loading from './Loading/Loading';
 import * as S from './PostList.styled'
 import PostTemplate from './PostTemplate/PostTemplate';
 
-const PostList = () => {
+const PostList = ({postData}) => {
     const data = [
         {
             imageURL: '/landing10.jpg',
@@ -25,13 +25,13 @@ const PostList = () => {
     if (isLoading){
         Output = <LoadingElement/>
     }else{
-        Output = data.map(dataElement => <div className="postOuter center"><PostTemplate data={dataElement}/></div>)
+        Output = postData.map(dataElement => <div className="postOuter center"><PostTemplate data={dataElement}/></div>)
     }
     // Delay simulator
     const changeState = () => {
         setIsLoading(false)
     }
-    setTimeout(changeState, 1000);
+    setTimeout(changeState, 500);
     return (
         <S.PostListContainer>
             {Output}

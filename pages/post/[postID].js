@@ -2,7 +2,8 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import PageFornat from "../../Components/Common/PageFormat/PageFormat";
 import PostPage from "../../Components/Pages/Post/PostPage";
-
+import {collection, getDocs} from 'firebase/firestore'
+import {db} from '../../firebase/firebase'
 
 const PostOuter = ({postData}) => {
     const router = useRouter()
@@ -23,14 +24,22 @@ const PostOuter = ({postData}) => {
 }
 
 export async function getServerSideProps() {
-    // Call an external API endpoint to get posts
-    const res = await fetch('https://catfact.ninja/fact')
-    const postData = await res.json()
-    return {
-      props: {
-        postData,
-      },
-    }
+  const res = await fetch('https://catfact.ninja/fact')
+  const postData = await res.json()
+  const collectionRef = collection(db, 'postData')
+  getDocs(collectionRef)
+  .then(res=>{
+    const postData = res.docs.map(doc => ({
+      data: doc.data(),
+      id: doc.id
+    }))
+    console.log(test)
+  })
+  return {
+    props: {
+      postData,
+    },
   }
+}
   
 export default PostOuter;

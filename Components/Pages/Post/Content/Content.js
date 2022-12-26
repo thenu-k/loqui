@@ -1,7 +1,6 @@
 import * as S from './Content.styled'
 
 const Content = ({postData}) => {
-    console.log(postData)
     const data = {
         imageURL: '/landing10.jpg',
         title: 'The Crisis in Cosmology.', 
