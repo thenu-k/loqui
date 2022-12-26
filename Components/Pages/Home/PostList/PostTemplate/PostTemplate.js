@@ -5,7 +5,7 @@ const PostTemplate = ({data}) => {
     //Redirection logic
     const router = useRouter()
     const redirect = (postID) => {
-        const redirectURL = `/${postID}`
+        const redirectURL = `/post/${postID}`
         router.push(redirectURL)
     }
     return (
