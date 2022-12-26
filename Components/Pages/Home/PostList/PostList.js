@@ -9,13 +9,15 @@ const PostList = () => {
             imageURL: '/landing10.jpg',
             title: 'Breakthrough in Nuclear Fusion', 
             userName: 'Anonymous', 
-            about: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, quam!'
+            about: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, quam!',
+            postID: '205'
         },
         {
             imageURL: '/landing.jpg',
             title: 'Breakthrough in Nuclear Fusion', 
             userName: 'Anonymous', 
-            about: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, quam!'
+            about: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, quam!',
+            postID: '206'
         },
     ]
     const [isLoading, setIsLoading] = useState(true)

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const PostTemplateContainer = styled.div`
+export const PostTemplateContainer = styled.article`
     width: 100%; padding-bottom: 20px;
     display: flex; flex-direction: column; align-items: center;
 

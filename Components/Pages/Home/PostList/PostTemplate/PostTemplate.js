@@ -1,9 +1,15 @@
+import { useRouter } from 'next/router'
 import * as S from './PostTemplate.styled'
 
 const PostTemplate = ({data}) => {
-    console.log(data.imageURL)
+    //Redirection logic
+    const router = useRouter()
+    const redirect = (postID) => {
+        const redirectURL = `/${postID}`
+        router.push(redirectURL)
+    }
     return (
-        <S.PostTemplateContainer>
+        <S.PostTemplateContainer onClick={(e)=>{redirect(data.postID)}}>
             {
                 (data.imageURL!=null)
                     ? (
