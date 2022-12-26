@@ -6,11 +6,14 @@ export const PostTemplateContainer = styled.div`
     & .imageOuter{
         margin: 20px 0;
         overflow: hidden;
-        width: 100%; max-height: 400px;
+        width: 100%; height: 10vw;
         border-radius: 5px;
-        & img{
+        background-image: ${props => props.about};
+        background-size: cover;
+        background-position: center; background-repeat: no-repeat;
+        /* & img{
             width: 100%; height: auto;
-        }
+        } */
     }
     & .textSection{
         & > *{margin: 10px 0; width: 100%;}

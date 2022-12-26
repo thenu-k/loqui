@@ -4,14 +4,17 @@ import PostTemplate from './PostTemplate/PostTemplate';
 const PostList = () => {
     const data = [
         {
-            imageURL: '/landing.jpg', title: 'Breakthrough in Nuclear Fusion', userName: 'Anonymous', about: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, quam!'
+            imageURL: '/landing10.jpg',
+            title: 'Breakthrough in Nuclear Fusion', 
+            userName: 'Anonymous', 
+            about: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, quam!'
         },
         {
-            url: null, title: 'Title', userName: 'userName', about: 'About'
+            imageURL: '/landing.jpg',
+            title: 'Breakthrough in Nuclear Fusion', 
+            userName: 'Anonymous', 
+            about: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, quam!'
         },
-        {
-            url: null, title: 'Title', userName: 'userName', about: 'About'
-        }
     ]
     return (
         <S.PostListContainer>
