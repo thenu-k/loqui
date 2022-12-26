@@ -14,15 +14,32 @@ export const SideSectionContainer = styled.div`
         background-color: white;
         border: 1px solid #d7d7d7;
         & .bannerImage{
-            width: 100%; height: 150px;
-            background-image: url('/landing2.jpg'); background-position: center;
+            width: 100%; height: 200px;
+            background-image: url('/banner.jpg'); background-position: center;
             background-size: cover; background-repeat: no-repeat;
             border-radius: 5px 5px 0 0;
+            position: relative;
+            & .profileImage{
+                background-color: white;
+                border-radius: 5px;
+                height: 125px; width: 125px;
+                background-image: url('/profileImage.jpg'); background-position: center;
+                background-size: cover; background-repeat: no-repeat;
+                border: 2px solid #d7d7d7;
+            }
         }
         & .intro{
             width: 100%; 
+            padding: 20px 0;
+            display: flex; flex-direction: column; align-items: center;
             & p{
-                width: 95%; padding: 20px 0;
+                width: 90%;
+                text-align: left;
+            }
+            & span{
+                width: 90%;
+                display: flex; justify-content: flex-start;
+                margin-top: 20px; font-size: 0.9em;
             }
         }
     }
