@@ -4,6 +4,7 @@ import {GLOBAL_SETTINGS} from '../../../../frontend.config'
 export const PostListContainer = styled.div`
     width: 70%; height: fit-content;
     display: flex; flex-direction: column; align-items: center;
+    flex-shrink: 1;
 
     & .postOuter{
         width: 100%;

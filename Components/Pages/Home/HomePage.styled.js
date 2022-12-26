@@ -6,10 +6,11 @@ export const HomeContainer = styled.section`
     display: flex; flex-direction: row; justify-content: center;
     background-color: ${`${GLOBAL_SETTINGS.COLOR_SCHEMES.LIGHT[2]}`};
 
-    & .inner{
+    & .inner.homePage{
         margin-top: 40px;
         width: 80%;
         max-width: 1500px;
         display: flex; flex-direction: row; justify-content: space-between;
+        position: relative;
     }
 `
