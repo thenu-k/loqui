@@ -3,6 +3,7 @@ import PageFormat from '../Components/Common/PageFormat/PageFormat'
 import HomePage from '../Components/Pages/Home/HomePage'
 import {collection, getDocs} from 'firebase/firestore'
 import {db} from '../firebase/firebase'
+import CreatePost from '../Components/Pages/CreatePost/CreatePost'
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <PageFormat>
-        Create a post!
+        <CreatePost/>
       </PageFormat>
     </>
   )
