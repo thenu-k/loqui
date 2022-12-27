@@ -1,6 +1,6 @@
 # LOQUI
 
-![Image][https://imgur.com/xj2BR75]
+<img src='https://imgur.com/xj2BR75'>
 
 ### About
 
