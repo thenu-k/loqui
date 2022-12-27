@@ -36,7 +36,7 @@ export const SideSectionContainer = styled.div`
             display: flex; flex-direction: column; align-items: center;
             & p{
                 width: 80%;
-                font-size: 1em; font-weight: 500;
+                font-size: 1em; font-weight: 400;
                 text-align: left;
                 line-height: 1.5;
             }
