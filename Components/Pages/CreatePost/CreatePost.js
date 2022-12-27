@@ -24,7 +24,7 @@ const CreatePost = () => {
         }
         //Then checking rest (or null errors will occur here)
         const aboutTest = values[4].length>=250
-        const usernameTest = values[0].length>=50
+        const usernameTest = values[0].length>=100
         const titleTest = values[0].length>=125
         const contentTest = values[3].length>=2000
         if(aboutTest===true){
@@ -81,7 +81,7 @@ const CreatePost = () => {
                     </div>
                     <div className="imageSection inpElement com1">
                         {/* <label htmlFor="imageInput">Title</label> */}
-                        <input type="text" id='imageInput' placeholder='Image URL' onChange={(e)=> {setImageURLValue(e.target.value)}}/>
+                        <input type="text" id='imageInput' placeholder='Imgur Link' onChange={(e)=> {setImageURLValue(e.target.value)}}/>
                     </div>
                     <div className="usernameSection inpElement com1">
                         {/* <label htmlFor="usernameInput">Title</label> */}
