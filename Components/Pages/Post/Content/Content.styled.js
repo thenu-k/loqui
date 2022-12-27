@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ContentContainer = styled.div`
     width: 100%;
     & .content.inner{
-        width: 80%;
+        width: 70%;
         display: flex;
         flex-direction: column;
         & .meta{
@@ -22,7 +22,7 @@ export const ContentContainer = styled.div`
             }
         }
         & .image{
-            width: 100%; height:clamp(300px,30vw,500px); background-color: black;
+            width: 100%; height:clamp(300px,35vw,600px); background-color: black;
             min-width: 400px;
             margin-bottom: 60px;
             border-radius: 5px;
