@@ -15,7 +15,8 @@ const PostTemplate = ({data}) => {
             {
                 (data.imageURL!=null)
                     ? (
-                        <div className="imageOuter center" style={{backgroundImage: `url(${data.imageURL})`}}>
+                        // The .png is needed for imgur hosting
+                        <div className="imageOuter center" style={{backgroundImage: `url(${data.imageURL}.png)`}}>
                         </div>
                     )
                     : null

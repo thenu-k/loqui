@@ -8,7 +8,8 @@ const Content = ({data}) => {
                     <h1>{data.title}</h1>
                     <span>by {data.userName}</span>
                 </div>
-                <div className="image" style={{backgroundImage: `url('${data.imageURL}')`}}></div>
+                {/* The .png is needed for imgur images */}
+                <div className="image" style={{backgroundImage: `url('${data.imageURL}.png')`}}></div>
                 <div className="text">
                     <p>
                         {data.text}
