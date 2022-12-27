@@ -7,7 +7,7 @@ export const PostTemplateContainer = styled.article`
     & .imageOuter{
         margin-bottom: 20px;
         overflow: hidden;
-        width: 100%; height: clamp(300px, 30vw, 400px);
+        width: 100%; height: clamp(300px, 35vw, 450px);
         border-radius: 5px 5px 0 0;
         background-size: cover; 
         background-position: center; background-repeat: no-repeat;

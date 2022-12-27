@@ -1,0 +1,1 @@
+[Firestore API currently restricted to localhost:3000 and not vercel]

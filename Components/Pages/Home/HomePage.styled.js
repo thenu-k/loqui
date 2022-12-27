@@ -10,12 +10,13 @@ export const HomeContainer = styled.section`
     & .inner.homePage{
         margin-top: 40px;
         width: 80%;
-        min-width: 900px;
-        max-width: 1000px;
+        /* min-width: 900px; */
+        max-width: 1500px;
         display: flex; flex-direction: row; justify-content: space-between;
         position: relative;
         #sideSection{
             height: 100%;
+            max-width:350px;
             .createPost.outer{
                 position: sticky;
                 top: 80px;
