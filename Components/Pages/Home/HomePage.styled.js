@@ -25,6 +25,15 @@ export const HomeContainer = styled.section`
 
     @media all and (max-width: 1000px){
         & .inner.homePage{
+            width: 80%;
+            min-width: unset;
+            #sideSection{
+                display: none;
+            }
+        }
+    }
+    @media all and (max-width: 500px){
+        & .inner.homePage{
             width: 90%;
             min-width: unset;
             #sideSection{

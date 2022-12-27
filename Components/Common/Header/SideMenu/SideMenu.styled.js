@@ -24,7 +24,7 @@ export const SideMenuContainer = styled.div`
                 height: 30px;
                 margin-left: 10%;
                 background-color: white;
-                border: 1px solid #d7d7d7;
+                border: 3px solid black;
                 border-radius: 5px;
                 & img{
                     height: 100%;

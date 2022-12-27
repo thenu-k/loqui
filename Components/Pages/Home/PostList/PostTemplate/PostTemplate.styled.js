@@ -7,7 +7,7 @@ export const PostTemplateContainer = styled.article`
     & .imageOuter{
         margin-bottom: 20px;
         overflow: hidden;
-        width: 100%; height: clamp(300px, 30vw, 500px);
+        width: 100%; height: clamp(300px, 30vw, 400px);
         border-radius: 5px 5px 0 0;
         background-size: cover; 
         background-position: center; background-repeat: no-repeat;
@@ -26,6 +26,17 @@ export const PostTemplateContainer = styled.article`
             background-color: black; color: white;
             border-radius: 5px;
             padding: 5px 10px;
+        }
+    }
+
+    @media all and (max-width: 1000px){
+        & .imageOuter{
+            height: 45vw;
+        }
+    }
+    @media all and (max-width:500px){
+        & .imageOuter{
+            height: 80vw;
         }
     }
 `

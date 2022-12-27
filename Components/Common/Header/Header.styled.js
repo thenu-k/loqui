@@ -48,7 +48,7 @@ export const HeaderContainer = styled.header`
 
     @media all and (max-width: 1000px){
         & nav{
-            width: 90%;
+            width: 80%;
             & li:not(.menuIcon){
                 display: none
             }
@@ -68,6 +68,11 @@ export const HeaderContainer = styled.header`
         }
         #sideMenu{
             display: flex;
+        }
+    }
+    @media all and (max-width: 500px){
+        & nav{
+            width: 90%;
         }
     }
 `
