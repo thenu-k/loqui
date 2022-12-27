@@ -43,9 +43,10 @@ export const SideSectionContainer = styled.div`
                 line-height: 1.5;
             }
             & span{
-                width: 90%;
+                width: 80%;
                 display: flex; justify-content: flex-start;
                 margin-top: 20px; font-size: 01em; 
+                color: #585858;
             }
         }
     }

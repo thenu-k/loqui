@@ -17,7 +17,7 @@ const SideSection = () => {
                     <p className='center'>
                         Do Not Go Gentle Into That Good Night
                     </p>
-                    {/* <span>Thenu Kaluarahchi © 2022  </span> */}
+                    <span>Thenu Kaluarahchi © 2022  </span>
                 </div>
             </div>
             <div className="createPost outer">
