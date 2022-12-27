@@ -1,6 +1,6 @@
 # LOQUI
 
-<img src='https://imgur.com/xj2BR75' height='200px' width='auto'/>
+<img src='loqui-thenu-k.vercel.app/readmeImage.png' height='200px' width='auto'/>
 
 ### About
 
