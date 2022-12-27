@@ -15,8 +15,7 @@ const SideSection = () => {
                 </div>
                 <div className="intro center">
                     <p className='center'>
-                        Do not go gentle into that good night.<br/>
-                        Rage, rage against the dying of light. 
+                        Do Not Go Gentle Into That Good Night - Rage Against The Dying Of Light
                     </p>
                     {/* <span>Thenu Kaluarahchi © 2022  </span> */}
                 </div>
