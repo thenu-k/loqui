@@ -4,6 +4,7 @@ import {GLOBAL_SETTINGS} from '../../../../frontend.config'
 export const SideSectionContainer = styled.div`
     width: 30%;
     min-width: 250px;
+    max-width: 300px;
     border: 0 !important;
     & .inner.sideMenu{
         width: 100%;

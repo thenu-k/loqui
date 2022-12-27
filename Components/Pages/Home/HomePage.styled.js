@@ -14,6 +14,13 @@ export const HomeContainer = styled.section`
         max-width: 1000px;
         display: flex; flex-direction: row; justify-content: space-between;
         position: relative;
+        #sideSection{
+            height: 100%;
+            .createPost.outer{
+                position: sticky;
+                top: 80px;
+            }
+        }
     }
 
     @media all and (max-width: 1000px){
