@@ -1,6 +1,12 @@
+import { useRouter } from 'next/router';
 import * as S from './SideSection.styled'
 
 const SideSection = () => {
+    const router = useRouter()
+    const createPostRedirect = (e) => {
+        e.preventDefault()
+        router.push('/createpost')
+    }
     return (
         <S.SideSectionContainer id='sideSection'>
             <div className="inner sideMenu">
@@ -16,7 +22,7 @@ const SideSection = () => {
                 </div>
             </div>
             <div className="createPost outer">
-                <button>
+                <button onClick={createPostRedirect}>
                     <span>Create Post</span>
                 </button>
             </div>
