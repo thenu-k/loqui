@@ -23,6 +23,7 @@ const PostList = () => {
             console.log('Error Retrieving Data')
         }
     }
+    getPostData()
     var Output;
     if (postData===null){
         Output = <LoadingElement/>

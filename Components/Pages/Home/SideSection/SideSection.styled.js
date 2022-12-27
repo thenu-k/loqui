@@ -34,9 +34,10 @@ export const SideSectionContainer = styled.div`
             padding: 20px 0;
             display: flex; flex-direction: column; align-items: center;
             & p{
-                width: 90%;
+                width: 80%;
                 font-size: 1em; font-weight: 500;
                 text-align: left;
+                line-height: 1.5;
             }
             & span{
                 width: 90%;

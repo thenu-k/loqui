@@ -4,6 +4,7 @@ export const SideMenuContainer = styled.div`
     height: 100vh; min-height: 400px;
     width: 100vw;
     position: fixed; top: 0; left: 100vw;
+    overflow: scroll;
     &.visible{
         left: 0;
     }

@@ -12,7 +12,7 @@ const SideSection = () => {
                         Do not go gentle into that good night.<br/>
                         Rage, rage against the dying of light. 
                     </p>
-                    <span>Thenu Kaluarahchi © 2022  </span>
+                    {/* <span>Thenu Kaluarahchi © 2022  </span> */}
                 </div>
             </div>
             <div className="createPost outer">
