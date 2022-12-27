@@ -25,5 +25,11 @@ export const PostListContainer = styled.div`
 
     @media all and (max-width: 1000px){
         width: 100%; flex-shrink: 0;
+        & .postOuter:hover{
+            background-color: white;
+        }
+        & .postOuter:active{
+            background-color: #d2d2d2;
+        }
     }
 `

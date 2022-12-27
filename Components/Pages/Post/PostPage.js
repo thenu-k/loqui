@@ -3,7 +3,6 @@ import * as S from './PostPage.styled'
 
 const PostPage = ({postData}) => {
     const data = postData[0]
-    console.log(data)
     return (
         <S.PostPageContainer className='center'>
             <div className="postPage inner">
