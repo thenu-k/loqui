@@ -34,10 +34,19 @@ export async function getServerSideProps(context) {
     userName: doc.data().userName,
     text: doc.data().text
   })) 
-  return {
-    props: {
-      postData,
-    },
+  if(postData.length===0){
+    return {
+      redirect: {
+        permanent: false,
+        destination: "/404",
+      }
+    }
+  }else{
+    return{
+      props:{
+        postData: postData
+      }
+    }
   }
 }
   
