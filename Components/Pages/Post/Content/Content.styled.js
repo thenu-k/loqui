@@ -9,9 +9,9 @@ export const ContentContainer = styled.div`
         & .meta{
             width: 100%;
             display: flex; flex-direction: column; 
-            margin-bottom: 40px;
+            margin-bottom: 60px;
             & h1{
-                font-size: 2.5em; font-weight: 600;
+                font-size: 3em; font-weight: 400;
                 margin-bottom: 20px;
             }
             & span{
@@ -22,17 +22,17 @@ export const ContentContainer = styled.div`
             }
         }
         & .image{
-            width: 80%; height:clamp(300px,30vw,500px); background-color: black;
+            width: 100%; height:clamp(300px,30vw,500px); background-color: black;
             min-width: 400px;
-            margin-bottom: 40px;
+            margin-bottom: 60px;
             border-radius: 5px;
             background-position: center; background-size: cover;
             background-repeat: no-repeat;
         }
         & .text{
-            width: 80%;
-            margin-bottom: 40px;
-            & *{line-height: 2}
+            width: 100%;
+            margin-bottom: 60px;
+            & *{line-height: 2; font-size:1.2em}
         }
     }
 `
