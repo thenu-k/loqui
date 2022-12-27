@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <S.HeaderContainer className='center'>
             <nav>
-                <h2 className='center'>LOQUI</h2>
+                <Link href='/' className='logo center'>LOQUI</Link>
                 <ul>
                     <li><Link href="/">Home</Link></li>
                     <li><Link href="#">Github</Link></li>

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Loading from './Loading/Loading';
 import * as S from './PostList.styled'
 import PostTemplate from './PostTemplate/PostTemplate';
@@ -10,6 +10,7 @@ const PostList = () => {
     const getPostData = async() => {
         const collectionRef = collection(db, 'postData')
         try{
+            console.log('Retrieving Data')
             const rawPostData = await getDocs(collectionRef)
             const postData = rawPostData.docs.map(doc => ({
                 postID: doc.id,
@@ -23,7 +24,9 @@ const PostList = () => {
             console.log('Error Retrieving Data')
         }
     }
-    getPostData()
+    useEffect(()=>{
+        getPostData()
+    },[])
     var Output;
     if (postData===null){
         Output = <LoadingElement/>
