@@ -13,7 +13,6 @@ const CreatePost = () => {
     const handleFormSubmit = (e) => {
         e.preventDefault()
         const values = [titleValue, imageURLValue, usernameValue, contentValue, aboutValue]
-        console.log(values)
         const nullTest = values.includes(null) || values.includes('') 
         //First checking whether null
         if(nullTest===true){
@@ -24,10 +23,10 @@ const CreatePost = () => {
             return
         }
         //Then checking rest (or null errors will occur here)
-        const aboutTest = values[4].length>=5 
-        const usernameTest = values[0].length>=5
-        const titleTest = values[0].length>=5
-        const contentTest = values[3].length>=5
+        const aboutTest = values[4].length>=250
+        const usernameTest = values[0].length>=50
+        const titleTest = values[0].length>=125
+        const contentTest = values[3].length>=2000
         if(aboutTest===true){
             console.log('About')
             if(errorElement.current.classList.contains('displayOff')===true){
@@ -65,6 +64,7 @@ const CreatePost = () => {
     }
     //Data Transfer
     const sendData = async(values) => {
+        console.log('Sending Data')
         const transferPackage = {
             title: values[0], imageURL: values[1], userName: values[2], text: values[3], about: values[4]
         }
