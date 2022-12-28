@@ -37,16 +37,16 @@ export const SideSectionContainer = styled.div`
             border-radius: 0 0 5px 5px;
             background-color: white;  color: black;
             & p{
-                width: 80%;
+                width: 85%;
                 font-size: 1em; font-weight: 400;
                 text-align: left;
                 line-height: 1.5;
             }
             & span{
-                width: 80%;
+                width: 85%;
                 display: flex; justify-content: flex-start;
                 margin-top: 20px; font-size: 01em; 
-                color: #585858;
+                color: black;
             }
         }
     }

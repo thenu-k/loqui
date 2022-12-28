@@ -37,6 +37,7 @@ export const HomeContainer = styled.section`
         & .inner.homePage{
             width: 90%;
             min-width: unset;
+            margin-top: 30px;
             #sideSection{
                 display: none;
             }

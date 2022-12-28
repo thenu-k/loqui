@@ -10,4 +10,16 @@ export const PostPageContainer = styled.section`
         max-width: 1500px;
         margin-top: 40px;
     }
+
+    @media all and (max-width: 1000px){
+        & .postPage.inner{
+            width: 80%;
+        }
+    }
+    @media all and (max-width: 500px){
+        & .postPage.inner{
+            width: 90%;
+            margin-top: 30px;
+        }
+    }
 `
