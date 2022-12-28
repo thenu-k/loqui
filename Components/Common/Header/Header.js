@@ -10,7 +10,7 @@ const Header = () => {
                 <Link href='/' className='logo center'>LOQUI</Link>
                 <ul>
                     <li><Link href="/">Home</Link></li>
-                    <li><Link href="https://github.com/thenu-k/aeternus-pf-02" target={'_blank'}>Github</Link></li>
+                    <li><Link href="https://github.com/thenu-k/loqui-fe" target={'_blank'}>Github</Link></li>
                     <li><Link href="#">Contact</Link></li>
                     <li className='menuIcon center'>
                         <button className='center' onClick={() => {document.querySelector('#sideMenu').classList.toggle('visible')}}>
