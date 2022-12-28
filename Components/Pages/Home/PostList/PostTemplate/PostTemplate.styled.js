@@ -18,7 +18,7 @@ export const PostTemplateContainer = styled.article`
         width: 90%;
 
         & h3{
-            font-size: 2em; font-weight: 500;
+            font-size: 2em; font-weight: 400;
         }
 
         & h4{
@@ -26,6 +26,12 @@ export const PostTemplateContainer = styled.article`
             background-color: black; color: white;
             border-radius: 5px;
             padding: 5px 10px;
+        }
+        & p{
+            -webkit-hyphens: auto;
+            -moz-hyphens: auto;
+            -ms-hyphens: auto;
+            hyphens: auto;
         }
     }
 
@@ -37,6 +43,19 @@ export const PostTemplateContainer = styled.article`
     @media all and (max-width:500px){
         & .imageOuter{
             height: 80vw;
+        }
+        & .textSection{
+            & > *{margin: 5px 0;}
+        }
+        & .textSection h3{
+            font-size: 1.2em;
+        }
+        & .textSection p{
+            font-size: 1em;
+        }
+        & .textSection h4{
+            font-size: 0.8em;
+            padding: 2px 10px;
         }
     }
 `

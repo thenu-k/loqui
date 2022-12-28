@@ -13,6 +13,10 @@ export const ContentContainer = styled.div`
             & h1{
                 font-size: 3em; font-weight: 400;
                 margin-bottom: 20px;
+                -webkit-hyphens: auto;
+                -moz-hyphens: auto;
+                -ms-hyphens: auto;
+                hyphens: auto;
             }
             & span{
                 width: fit-content;
@@ -32,7 +36,45 @@ export const ContentContainer = styled.div`
         & .text{
             width: 100%;
             margin-bottom: 60px;
-            & *{line-height: 2; font-size:1.2em}
+            text-align: left;
+            & *{line-height: 2}
+            /* word-break: break-all; */
+            & p{
+                /* font-size: 1.2em; */
+                -webkit-hyphens: auto;
+                -moz-hyphens: auto;
+                -ms-hyphens: auto;
+                hyphens: auto;
+            }
+        }
+    }
+    @media all and (min-width: 1000px){
+        & .content.inner .text p{
+            font-size: 1.2em;
+        }
+    }
+    @media all and (max-width: 1000px){
+        & .content.inner{
+            width: 100%;
+        }
+    }
+    @media all and (max-width: 500px){
+        & .content.inner .text{
+            font-size: 1em; /* why is this not working???*/
+        }
+        & .content.inner .image{
+            min-width: unset;
+            height: 70vw;
+            margin-bottom: 30px;
+        }
+        &  .content.inner .meta{
+            margin-bottom: 30px;
+            & h1{
+                font-size: 1.5em;
+            }
+            & span{
+                font-size: 0.8em;
+            }
         }
     }
 `

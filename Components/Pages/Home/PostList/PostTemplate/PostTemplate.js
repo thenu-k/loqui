@@ -24,7 +24,8 @@ const PostTemplate = ({data}) => {
             <div className="textSection">
                     <h3>{data.title}</h3>
                     <h4>{data.userName}</h4>
-                    <p>{data.about}</p>
+                    {/* Lang de for word break */}
+                    <p lang='de'>{data.about}</p>
             </div>
         </S.PostTemplateContainer>
     );
