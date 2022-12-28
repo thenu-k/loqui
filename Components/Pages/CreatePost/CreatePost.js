@@ -96,7 +96,7 @@ const CreatePost = () => {
                     </div>
                     <div className="formControls">
                         <p className='errorMessage displayOff incomplete' ref={errorElement}>ERROR</p>
-                        <button type='submit'>Submit</button>
+                        <button type='submit'>Test</button>
                     </div>
                 </form>
             </div>
