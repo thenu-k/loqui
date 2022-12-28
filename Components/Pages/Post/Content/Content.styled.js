@@ -26,7 +26,7 @@ export const ContentContainer = styled.div`
             }
         }
         & .image{
-            width: 100%; height:clamp(300px,35vw,600px); background-color: black;
+            width: 100%; height:clamp(300px,35vw,600px); background-color: #c4c4c4;
             min-width: 400px;
             margin-bottom: 60px;
             border-radius: 5px;
