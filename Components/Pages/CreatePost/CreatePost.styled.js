@@ -29,7 +29,7 @@ export const CreatePostContainer = styled.section`
                 }
                 &.titleSection input{
                     border-top: 2px solid  #d7d7d7;
-                    font-size: 3em; font-weight: 500;
+                    font-size: 3em; font-weight: 400;
                 }
                 &.com1 input{
                     font-size: 1.2em;
@@ -87,6 +87,24 @@ export const CreatePostContainer = styled.section`
                     }
                 }
             }
+        }
+    }
+
+    @media all and (max-width: 1000px){
+        & .titleSection input{
+            font-size: 2em !important;
+        }
+        & .com1 input, textarea{
+            font-size: 1em !important;
+        }
+    }
+    @media all and (max-width: 500px){
+        & .titleSection input{
+            font-size: 1.5em !important;
+        }
+        & .createPost.inner{
+            margin-top: 30px;
+            width: 90%;
         }
     }
 `
