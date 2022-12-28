@@ -1,14 +1,9 @@
-import { useRouter } from 'next/router'
 import * as S from './PostTemplate.styled'
 
 const PostTemplate = ({data}) => {
     //Redirection logic
-    const router = useRouter()
     const redirect = (postID) => {
-        router.push({
-            pathname: '/post/[postID]',
-            query: { postID: postID },
-          })
+        window.location.replace(`/post/${postID}`)
     }
     return (
         <S.PostTemplateContainer onClick={(e)=>{redirect(data.postID)}}>
