@@ -1,4 +1,6 @@
 import * as S from './PostTemplate.styled'
+import Hyphenated from 'react-hyphen';
+import de from 'hyphenated-de';
 
 const PostTemplate = ({data}) => {
     //Redirection logic
@@ -20,7 +22,9 @@ const PostTemplate = ({data}) => {
                     <h3>{data.title}</h3>
                     <h4>{data.userName}</h4>
                     {/* Lang de for word break */}
-                    <p lang='de'>{data.about}</p>
+                    <Hyphenated lang={de}>
+                        <p lang='de'>{data.about}</p>
+                    </Hyphenated>
             </div>
         </S.PostTemplateContainer>
     );

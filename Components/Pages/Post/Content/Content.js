@@ -1,4 +1,6 @@
 import * as S from './Content.styled'
+import Hyphenated from 'react-hyphen';
+import de from 'hyphenated-de';
 
 const Content = ({data}) => {
     return (
@@ -12,9 +14,11 @@ const Content = ({data}) => {
                 <div className="image" style={{backgroundImage: `url('${data.imageURL}.png')`}}></div>
                 <div className="text">
                     {/* Lang de for word break */}
-                    <p lang='de'>
-                        {data.text}
-                    </p>
+                    <Hyphenated  lang={de}>
+                        <p lang='de'>
+                            {data.text}
+                        </p>
+                    </Hyphenated>
                 </div>
             </div>
         </S.ContentContainer>

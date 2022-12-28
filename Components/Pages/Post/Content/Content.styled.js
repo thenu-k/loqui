@@ -11,7 +11,7 @@ export const ContentContainer = styled.div`
             display: flex; flex-direction: column; 
             margin-bottom: 60px;
             & h1{
-                font-size: 3em; font-weight: 400;
+                font-weight: 400;
                 margin-bottom: 20px;
                 -webkit-hyphens: auto;
                 -moz-hyphens: auto;
@@ -52,10 +52,16 @@ export const ContentContainer = styled.div`
         & .content.inner .text p{
             font-size: 1.2em;
         }
+        & .content.inner h1{
+            font-size: 3em;
+        }
     }
     @media all and (max-width: 1000px){
         & .content.inner{
             width: 100%;
+            & h1{
+                font-size: 2em;
+            }
         }
     }
     @media all and (max-width: 500px){
