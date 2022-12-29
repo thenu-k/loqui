@@ -8,10 +8,13 @@ const MenuBar = ({ editor}) => {
   if (!editor) {
     return null
   }
+  const toggleColor = (button) => {
+    button.classList.toggle('active')
+  }
   return (
     <>
       <button
-        onClick={(e) => {e.preventDefault();editor.chain().focus().toggleBold().run()}}
+        onClick={(e) => {e.preventDefault(); editor.chain().focus().toggleBold().run()}}
         disabled={
           !editor.can()
             .chain()

@@ -10,9 +10,13 @@ export const TextEditorContainer = styled.div`
         border-bottom: 2px solid #d7d7d7;
         & button{
             padding: 5px 10px; margin-right: 5px; margin-bottom: 5px;
-            border-radius: 3px;
+            border-radius: 3px; 
             :hover{
                 cursor: pointer;
+            }
+            &.is-active{
+                background-color: black;
+                color: white;
             }
         }
     }
