@@ -11,7 +11,7 @@ const MenuBar = ({ editor}) => {
   return (
     <>
       <button
-        onClick={() => editor.chain().focus().toggleBold().run()}
+        onClick={(e) => {e.preventDefault();editor.chain().focus().toggleBold().run()}}
         disabled={
           !editor.can()
             .chain()
@@ -24,30 +24,30 @@ const MenuBar = ({ editor}) => {
         Bold
       </button>
       <button
-        onClick={() => editor.chain().focus().setParagraph().run()}
+        onClick={(e) => {e.preventDefault(); editor.chain().focus().setParagraph().run()}}
         className={editor.isActive('paragraph') ? 'is-active' : ''}
       >
         Paragraph
       </button>
       <button
-        onClick={() => editor.chain().focus().toggleHeading({ level: 3 }).run()}
+        onClick={(e) => {e.preventDefault();editor.chain().focus().toggleHeading({ level: 3 }).run()}}
         className={editor.isActive('heading', { level: 3 }) ? 'is-active' : ''}
       >
         Sub-Heading
       </button>
       <button
-        onClick={() => editor.chain().focus().toggleOrderedList().run()}
+        onClick={(e) => {e.preventDefault(); editor.chain().focus().toggleOrderedList().run()}}
         className={editor.isActive('orderedList') ? 'is-active' : ''}
       >
         Ordered List
       </button>
       <button
-        onClick={() => editor.chain().focus().toggleBlockquote().run()}
+        onClick={(e) => {e.preventDefault(); editor.chain().focus().toggleBlockquote().run()}}
         className={editor.isActive('blockquote') ? 'is-active' : ''}
       >
         BlockQuote
       </button>
-      <button onClick={() => editor.chain().focus().setHardBreak().run()}>
+      <button onClick={(e) => {e.preventDefault();editor.chain().focus().setHardBreak().run()}}>
         Line Break
       </button>
     </>

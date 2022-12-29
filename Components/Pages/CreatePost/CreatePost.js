@@ -73,7 +73,6 @@ const CreatePost = () => {
         const transferPackage = {
             title: values[0], imageURL: values[1], userName: values[2], text: values[3], about: values[4]
         }
-        console.log(transferPackage)
         const dbRef = collection(db, "postData");
         await addDoc(dbRef, transferPackage)
     }
@@ -103,7 +102,7 @@ const CreatePost = () => {
                     </div>
                     <div className="formControls">
                         <p className='errorMessage displayOff incomplete' ref={errorElement}>ERROR</p>
-                        <button type='submit'>Submit</button>
+                        <button type='submit' id='formSubmitButton'>Submit</button>
                     </div>
                 </form>
             </div>
