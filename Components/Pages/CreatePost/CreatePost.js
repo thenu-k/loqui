@@ -9,8 +9,12 @@ const CreatePost = () => {
     const [titleValue, setTitleValue] = useState(null)
     const [imageURLValue, setImageURLValue] = useState(null)
     const [usernameValue, setUsernameValue] = useState(null)
-    const [contentValue, setContentValue] = useState(null)
+    const [contentValue, setContentValue] = useState('')
     const [aboutValue, setAboutValue] = useState(null)
+    // Fn to pass down to texteditor [Negative prop drilling]
+    const fnSetContentValue = (newValue) => {
+        setContentValue(newValue)
+    }
     const handleFormSubmit = (e) => {
         e.preventDefault()
         const values = [titleValue, imageURLValue, usernameValue, contentValue, aboutValue]
@@ -94,7 +98,7 @@ const CreatePost = () => {
                     </div>
                     <div className="contentSection">
                         {/* <textarea name="" id="" placeholder='Content' onChange={(e)=> {setContentValue(e.target.value)}}></textarea> */}
-                        <TextEditor/>
+                        <TextEditor contentValue={contentValue} updateFn={fnSetContentValue}/>
                     </div>
                     <div className="formControls">
                         <p className='errorMessage displayOff incomplete' ref={errorElement}>ERROR</p>

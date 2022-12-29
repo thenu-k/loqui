@@ -1,7 +1,8 @@
 import * as S from './TextEditor.styled'
 import { EditorContent, useEditor } from '@tiptap/react'
 import StarterKit from '@tiptap/starter-kit'
-import React from 'react'
+import React, { useImperativeHandle, useState } from 'react'
+import { forwardRef } from 'react'
 
 const MenuBar = ({ editor }) => {
   if (!editor) {
@@ -53,14 +54,17 @@ const MenuBar = ({ editor }) => {
   )
 }
 
-const TextEditor =  () => {
+const TextEditor =  ({contentValue, updateFn}) => {
   const editor = useEditor({
     extensions: [
       StarterKit,
     ],
     content:'',
+    onUpdate: (({editor}) => {
+        const html = editor.getHTML()
+        updateFn(html)
+    })
   })
-
   return (
     <S.TextEditorContainer className='editor center'>
       <div className="menuBar">

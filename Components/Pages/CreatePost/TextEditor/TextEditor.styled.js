@@ -7,8 +7,9 @@ export const TextEditorContainer = styled.div`
     /* Basic editor styles */
     & .menuBar{
         display: flex; flex-direction: row; flex-wrap: wrap;
+        border-bottom: 2px solid #d7d7d7;
         & button{
-            padding: 5px 10px; margin-right: 10px;
+            padding: 5px 10px; margin-right: 5px; margin-bottom: 5px;
             border-radius: 3px;
             :hover{
                 cursor: pointer;
