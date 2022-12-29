@@ -71,7 +71,7 @@ export const CreatePostContainer = styled.section`
                     padding: 10px 20px;
                     border-radius: 5px;
                     color: white;
-                    margin: 20px 0;
+                    margin: 10px 0;
                     margin-top: 0;
                     font-size: .8em;
                     &.displayOff{
