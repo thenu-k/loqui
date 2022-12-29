@@ -18,7 +18,7 @@ export const PostTemplateContainer = styled.article`
         width: 90%;
 
         & h3{
-            font-size: 1.8em; font-weight: 400;
+            font-size: 1.8em; font-weight: 500;
         }
 
         & h4{

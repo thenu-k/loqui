@@ -31,7 +31,7 @@ const CreatePost = () => {
         const aboutTest = values[4].length>=250
         const usernameTest = values[0].length>=100
         const titleTest = values[0].length>=125
-        const contentTest = values[3].length>=2000
+        const contentTest = values[3].length>=5000
         if(aboutTest===true){
             console.log('About')
             if(errorElement.current.classList.contains('displayOff')===true){

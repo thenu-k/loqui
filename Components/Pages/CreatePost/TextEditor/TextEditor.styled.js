@@ -47,6 +47,8 @@ export const TextEditorContainer = styled.div`
 
         h3{
             font-size: 1.5em;
+            line-height: 1.3;
+            padding: 10px 0;
         }
     
         code {
@@ -89,6 +91,15 @@ export const TextEditorContainer = styled.div`
         }
         ul{
             list-style-type: circle;
+        }
+
+        @media all and (max-width: 500px){
+            & h3{
+                font-size: 1.3em;
+            }
+            & p{
+                font-size: 1em;
+            }
         }
     }
 `

@@ -11,7 +11,7 @@ export const ContentContainer = styled.div`
             display: flex; flex-direction: column; 
             margin-bottom: 60px;
             & h1{
-                font-weight: 400;
+                font-weight: 500;
                 margin-bottom: 20px;
                 -webkit-hyphens: auto;
                 -moz-hyphens: auto;
@@ -36,22 +36,15 @@ export const ContentContainer = styled.div`
         & .text{
             width: 100%;
             margin-bottom: 60px;
-            text-align: left;
-            & *{line-height: 2}
-            /* word-break: break-all; */
-            & p{
-                /* font-size: 1.2em; */
-                -webkit-hyphens: auto;
-                -moz-hyphens: auto;
-                -ms-hyphens: auto;
-                hyphens: auto;
-            }
             #textEditor{
                 .menuBar{
                     display: none;
                 }
                 .textSection{
                     padding: 0;
+                    & p{
+                        line-height: 1.5;
+                    }
                 }
             }
         }
@@ -84,7 +77,7 @@ export const ContentContainer = styled.div`
         &  .content.inner .meta{
             margin-bottom: 30px;
             & h1{
-                font-size: 1.5em;
+                font-size: 1.8em;
             }
             & span{
                 font-size: 0.8em;
