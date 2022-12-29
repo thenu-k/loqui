@@ -4,14 +4,15 @@ import * as S from './PostList.styled'
 import PostTemplate from './PostTemplate/PostTemplate';
 import {collection, getDocs} from 'firebase/firestore'
 import {db} from '../../../../firebase/firebase'
+import { query, orderBy } from "firebase/firestore";  
 
 const PostList = () => {
     const [postData, setPostData] = useState(null)
     const getPostData = async() => {
-        const collectionRef = collection(db, 'postData')
         try{
             console.log('Retrieving Data')
-            const rawPostData = await getDocs(collectionRef)
+            const q = query(collection(db, "postData"), orderBy('created', 'desc'));
+            const rawPostData = await getDocs(q)
             const postData = rawPostData.docs.map(doc => ({
                 postID: doc.id,
                 imageURL: doc.data().imageURL,

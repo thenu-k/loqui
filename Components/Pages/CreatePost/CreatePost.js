@@ -79,7 +79,8 @@ const CreatePost = () => {
     const sendData = async(values) => {
         console.log('Sending Data')
         const transferPackage = {
-            title: values[0], imageURL: values[1], userName: values[2], text: values[3], about: values[4]
+            title: values[0], imageURL: values[1], userName: values[2], text: values[3], about: values[4],
+            created: new Date()
         }
         const dbRef = collection(db, "postData");
         try{
