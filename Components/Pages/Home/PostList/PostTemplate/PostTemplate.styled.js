@@ -18,7 +18,7 @@ export const PostTemplateContainer = styled.article`
         width: 90%;
 
         & h3{
-            font-size: 1.8em; font-weight: 500;
+            font-size: 1.5em; font-weight: 500;
         }
 
         & h4{
@@ -28,7 +28,7 @@ export const PostTemplateContainer = styled.article`
             padding: 5px 10px;
         }
         & p{
-            font-size: 1.2em;
+            font-size: 1em;
             line-height: 1.8em;
             -webkit-hyphens: auto;
             -moz-hyphens: auto;
@@ -56,7 +56,7 @@ export const PostTemplateContainer = styled.article`
             font-size: 1em;
         }
         & .textSection h4{
-            font-size: 0.8em;
+            font-size: 1em;
             padding: 2px 10px;
         }
     }
