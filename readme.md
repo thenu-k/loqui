@@ -2,7 +2,7 @@
 
 ### [Under Construction]
 
-<img src='https://imgur.com/f3iP8vW.png' height='300px' width='auto' style='border: 2px solid black; border-radius: 5px'/>
+<img src='https://imgur.com/K3py3eK.png' height='300px' width='auto' style='border: 2px solid black; border-radius: 5px'/>
 
 ### About
 
