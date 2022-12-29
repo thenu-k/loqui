@@ -5,7 +5,7 @@ import de from 'hyphenated-de';
 const PostTemplate = ({data}) => {
     //Redirection logic
     const redirect = (postID) => {
-        window.location.replace(`/post/${postID}`)
+        window.location.href = `/post/${postID}`
     }
     return (
         <S.PostTemplateContainer onClick={(e)=>{redirect(data.postID)}}>
