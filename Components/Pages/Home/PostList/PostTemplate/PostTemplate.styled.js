@@ -28,6 +28,7 @@ export const PostTemplateContainer = styled.article`
             padding: 5px 10px;
         }
         & p{
+            font-size: 1.2em;
             -webkit-hyphens: auto;
             -moz-hyphens: auto;
             -ms-hyphens: auto;
