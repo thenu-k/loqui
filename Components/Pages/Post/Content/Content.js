@@ -1,6 +1,7 @@
 import * as S from './Content.styled'
 import Hyphenated from 'react-hyphen';
 import de from 'hyphenated-de';
+import TextEditor from '../../CreatePost/TextEditor/TextEditor';
 
 const Content = ({data}) => {
     return (
@@ -13,12 +14,13 @@ const Content = ({data}) => {
                 {/* The .png is needed for imgur images */}
                 <div className="image" style={{backgroundImage: `url('${data.imageURL}.png')`}}></div>
                 <div className="text">
-                    {/* Lang de for word break */}
+                    {/* Lang de for word break
                     <Hyphenated  lang={de}>
                         <p lang='de'>
                             {data.text}
                         </p>
-                    </Hyphenated>
+                    </Hyphenated> */}
+                    <TextEditor initialContent={data.text} isEditable={false}/>
                 </div>
             </div>
         </S.ContentContainer>

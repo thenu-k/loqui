@@ -73,6 +73,7 @@ const CreatePost = () => {
         const transferPackage = {
             title: values[0], imageURL: values[1], userName: values[2], text: values[3], about: values[4]
         }
+        console.log(transferPackage)
         const dbRef = collection(db, "postData");
         await addDoc(dbRef, transferPackage)
     }
@@ -98,7 +99,7 @@ const CreatePost = () => {
                     </div>
                     <div className="contentSection">
                         {/* <textarea name="" id="" placeholder='Content' onChange={(e)=> {setContentValue(e.target.value)}}></textarea> */}
-                        <TextEditor contentValue={contentValue} updateFn={fnSetContentValue}/>
+                        <TextEditor contentValue={contentValue} updateFn={fnSetContentValue} isEditable={true} initalContent={''}/>
                     </div>
                     <div className="formControls">
                         <p className='errorMessage displayOff incomplete' ref={errorElement}>ERROR</p>

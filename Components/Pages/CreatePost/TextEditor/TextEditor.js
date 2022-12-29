@@ -4,7 +4,7 @@ import StarterKit from '@tiptap/starter-kit'
 import React, { useImperativeHandle, useState } from 'react'
 import { forwardRef } from 'react'
 
-const MenuBar = ({ editor }) => {
+const MenuBar = ({ editor}) => {
   if (!editor) {
     return null
   }
@@ -54,19 +54,20 @@ const MenuBar = ({ editor }) => {
   )
 }
 
-const TextEditor =  ({contentValue, updateFn}) => {
+const TextEditor =  ({contentValue, updateFn, initialContent, isEditable }) => {
   const editor = useEditor({
+    editable: isEditable,
     extensions: [
       StarterKit,
     ],
-    content:'',
+    content:initialContent,
     onUpdate: (({editor}) => {
         const html = editor.getHTML()
         updateFn(html)
     })
   })
   return (
-    <S.TextEditorContainer className='editor center'>
+    <S.TextEditorContainer className='editor center' id='textEditor'>
       <div className="menuBar">
         <MenuBar editor={editor} />
       </div>

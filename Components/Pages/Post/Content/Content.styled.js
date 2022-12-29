@@ -46,6 +46,14 @@ export const ContentContainer = styled.div`
                 -ms-hyphens: auto;
                 hyphens: auto;
             }
+            #textEditor{
+                .menuBar{
+                    display: none;
+                }
+                .textSection{
+                    padding: 0;
+                }
+            }
         }
     }
     @media all and (min-width: 1000px){
