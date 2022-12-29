@@ -35,6 +35,9 @@ export const TextEditorContainer = styled.div`
         p{
             font-size: 1.2em;
             line-height: 1.8;
+            strong {
+            font-size: 1.05em;
+        }
         }
         ul,
         ol {
@@ -103,7 +106,10 @@ export const TextEditorContainer = styled.div`
                 font-size: 1.3em;
             }
             & p{
-                font-size: 1em;
+                font-size: 1em; 
+                strong{
+                    font-size: 1em;
+                }
             }
         }
     }
