@@ -14,3 +14,4 @@ Loqui is a [fictional] blog site used for STEM discussion and news.
     - Next JS
     - Styled Components
     - Firebase/firestore
+    - TipTapJS
