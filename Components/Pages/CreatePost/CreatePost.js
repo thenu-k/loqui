@@ -2,6 +2,7 @@ import { useRef, useState } from 'react';
 import * as S from './CreatePost.styled'
 import {collection, addDoc} from 'firebase/firestore'
 import {db} from '../../../firebase/firebase'
+import TextEditor from './TextEditor/TextEditor';
 
 const CreatePost = () => {
     const errorElement = useRef()
@@ -91,8 +92,9 @@ const CreatePost = () => {
                         {/* <label htmlFor="usernameInput">Title</label> */}
                         <input type="text" id='aboutInput' placeholder='About' onChange={(e)=> {setAboutValue(e.target.value)}}/>
                     </div>
-                    <div className="textSection">
-                        <textarea name="" id="" placeholder='Content' onChange={(e)=> {setContentValue(e.target.value)}}></textarea>
+                    <div className="contentSection">
+                        {/* <textarea name="" id="" placeholder='Content' onChange={(e)=> {setContentValue(e.target.value)}}></textarea> */}
+                        <TextEditor/>
                     </div>
                     <div className="formControls">
                         <p className='errorMessage displayOff incomplete' ref={errorElement}>ERROR</p>

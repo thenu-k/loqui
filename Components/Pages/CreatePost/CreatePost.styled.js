@@ -39,25 +39,12 @@ export const CreatePostContainer = styled.section`
                     border-bottom: 2px solid #d7d7d7;
                 }
             }
-            & .textSection{
+            & .contentSection{
                 width: 90%;
                 margin-top:20px;
-                border: 1px solid  #d7d7d7;
+                border: 2px solid #d7d7d7;
                 border-radius: 5px;
                 margin-bottom: 40px;
-                & textarea{
-                    min-height: 200px;
-                    box-sizing: border-box;
-                    padding: 10px 20px;
-                    border-radius: 5px;
-                    width: 100%;
-                    line-height: 2;
-                    font-size: 1.2em;
-                    resize: none;
-                    &:focus{
-                        outline: 0;
-                    }
-                }
             }
             & .formControls{
                 width: 90%;
