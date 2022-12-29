@@ -43,7 +43,7 @@ export const ContentContainer = styled.div`
                 .textSection{
                     padding: 0;
                     & p{
-                        line-height: 1.5;
+                        line-height: 1.8;
                     }
                 }
             }

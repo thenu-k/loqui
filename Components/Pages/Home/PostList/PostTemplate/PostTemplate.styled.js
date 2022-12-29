@@ -29,6 +29,7 @@ export const PostTemplateContainer = styled.article`
         }
         & p{
             font-size: 1.2em;
+            line-height: 1.8em;
             -webkit-hyphens: auto;
             -moz-hyphens: auto;
             -ms-hyphens: auto;
