@@ -58,6 +58,11 @@ export const CreatePostContainer = styled.section`
                         opacity: 0.9;
                         cursor: pointer;
                     }
+                    &.false{
+                        background-color: #d7d7d7;
+                        color: black;
+                        :hover{cursor: unset}
+                    }
                 }
                 & .errorMessage{
                     width: fit-content;
